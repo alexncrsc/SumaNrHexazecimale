@@ -1,9 +1,9 @@
-Hexadecimal class
+# Hexadecimal class
 This is a C++ class that represents hexadecimal numbers, with the ability to convert them to decimal and perform arithmetic operations. The implementation uses a dynamic char array to store the hexadecimal digits as characters, and a long long integer to store the decimal equivalent.
 
 Usage
 To use the Hexadecimal class, simply include the Hexadecimal.h header file in your C++ code, and create instances of the class:
-
+```
 #include <iostream>
 #include "Hexadecimal.h"
 
@@ -24,8 +24,9 @@ int main() {
   hex -= "5"; // equivalent to hex.setNumar(hex.getNumar() - 5);
   std::cout << hex.getSir() << std::endl; // "1AA"
 }
+```
 
-Implementation details
+# Implementation details
 The Hexadecimal class uses a char pointer to store the hexadecimal digits as characters, and a long long integer to store the decimal equivalent. The class has three constructors:
 
 Hexadecimal(): creates an empty instance of the class.
@@ -46,5 +47,4 @@ long long operator+=(const char sir[])const: adds a null-terminated string that 
 long long operator-=(const char sir[])const: subtracts a null-terminated string that contains hexadecimal digits from the instance, and returns the result as a decimal number.
 Note that the arithmetic operators return a value instead of modifying the instance in place.
 
-License
-This code is licensed under the MIT License. See the LICENSE file for details.
+
